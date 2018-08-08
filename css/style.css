@@ -72,9 +72,10 @@ body {
 
 /* Works in Safari */
 ::selection {
-  background: #338fff;
-  color: #fff;
-  text-shadow: none; }
+  /* background: #338fff; */
+  /* color: #fff; */
+  /* text-shadow: none; */
+  }
 
 a:hover, a:active {
   outline: 0; }
@@ -712,7 +713,12 @@ p {
   background: #ff3d00 !important; }
 
 .bg-violet {
-  background: #6200eb !important; }
+  background: #da9f1b !important;
+  }
+
+.bg-brown {
+  background: #da9f1b !important;
+  }
 
 .border-top-blue {
   border-top: 3px solid #2879ff; }
@@ -725,6 +731,9 @@ p {
 
 .border-top-red {
   border-top: 3px solid #ff3d00; }
+
+.border-top-brown {
+  border-top: 3px solid #da9f1b; }
 
 .font-uppercase {
   text-transform: uppercase; }
@@ -1485,7 +1494,8 @@ blockquote {
     position: relative;
     width: 50%;
     float: left;
-    clear: left; }
+    clear: left;
+    }
     .timeline > li:last-child {
       margin-bottom: 0; }
     .timeline > li:nth-last-child(2) {
@@ -1561,7 +1571,8 @@ blockquote {
       float: right;
       clear: right;
       margin-top: 50px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      }
     .timeline > li:nth-child(2) {
       margin-top: 100px; }
     .timeline > li.timeline-inverted > .timeline-badge {
@@ -1649,7 +1660,8 @@ blockquote {
 
 /*Client Sec*/
 .client-sec img {
-  opacity: .4; }
+  /*opacity: .4;*/
+  }
 .client-sec .owl-controls {
   display: none; }
 

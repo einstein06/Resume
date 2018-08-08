@@ -80,8 +80,8 @@ var matResume = function () {
 	/* Map Initialization */
 	if( $('#map_canvas').length > 0 ){	
 		var settings = {
-			zoom: 11,
-			center: new google.maps.LatLng(40.6700, -73.9400),
+			zoom: 7,
+			center: new google.maps.LatLng(16.4630422,80.6688888),
 			styles:[
 				{
 					"stylers": [
@@ -129,7 +129,7 @@ var matResume = function () {
 				content: contentString
 			});	
 			
-			var companyPos = new google.maps.LatLng(40.6700, -73.9400);	
+			var companyPos = new google.maps.LatLng(16.5032947,80.6435758);	
 			var companyMarker = new google.maps.Marker({
 				position: companyPos,
 				map: map,
