@@ -910,7 +910,8 @@ blockquote {
 
 .mdl-card__title {
   display: block;
-  color: #444; }
+  color: #444;
+  }
 
 .mdl-card__supporting-text {
   padding: 20px;
@@ -1434,8 +1435,9 @@ blockquote {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.05);
-    z-index: 1; }
+    /* background: rgba(0, 0, 0, 0.05); */
+    z-index: 1;
+    }
   .portfolio-sec .light-img-wrap .img-cap {
     position: absolute;
     text-transform: capitalize;
