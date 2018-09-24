@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ALL);
+header("Access-Control-Allow-Origin: *");
 ini_set('display_errors', '1');
 require_once 'phpmailer/PHPMailerAutoload.php';
 
@@ -15,11 +16,13 @@ if (isset($_POST['inputName']) && isset($_POST['inputEmail'])&& isset($_POST['in
     //create an instance of PHPMailer
     $mail = new PHPMailer();
 
-    $mail->From = $_POST['inputEmail'];
+    $mail->From = 'profile@rbalaga.com'; //$_POST['inputEmail'];
     $mail->FromName = $_POST['inputName'];
-    $mail->AddAddress('themenerds@gmail.com'); //recipient 
-    $mail->Subject = 'Enquiry from Dexter';
-    $mail->Body = "Name: " . $_POST['inputName'] . "\r\n\r\nMessage: " . stripslashes($_POST['inputMessage']);
+    $mail->AddAddress('ramanji.balaga@gmail.com'); //recipient 
+    $mail->Subject = 'Profile Enquiry';
+    $mail->Body = "Name: " . $_POST['inputName'] 
+    . "\r\n\r\nEmail: " . stripslashes($_POST['inputEmail'])
+    . "\r\n\r\nMessage: " . stripslashes($_POST['inputMessage']);
 
     if (isset($_POST['ref'])) {
         $mail->Body .= "\r\n\r\nRef: " . $_POST['ref'];
