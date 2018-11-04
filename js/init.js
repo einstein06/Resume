@@ -201,7 +201,7 @@ if( $('.portfolio-wrap').length > 0 ){
 	/*Filter*/
 	
 	/*On Resize Portfolio Function*/
-	var onResizePort= function() {
+	var onResizePort = function() {
 		$body.find('.portf').each(function () { 
 			var winWidth = window.innerWidth;
 			var container_mock = $('.gallery-wrap').width();
